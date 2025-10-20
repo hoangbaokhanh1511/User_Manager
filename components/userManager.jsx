@@ -138,7 +138,7 @@ const handleDeleteUser = async (id) => {
           <p>Không tìm thấy người dùng</p>
         )
       ) : null}
-      <Toast message={toastMsg} onClose={hideToast}/>
+      {toastMsg && <Toast message={toastMsg} onClose={hideToast} />}
     </div>
   </>
   );
